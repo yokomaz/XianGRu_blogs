@@ -2,6 +2,8 @@
 
 个人博客，记录生活、读书和技术学习。
 
+:point_right: **博客地址：[yokomaz.github.io/XianGRu_blogs](https://yokomaz.github.io/XianGRu_blogs/)**
+
 ## 技术栈
 
 - [MkDocs](https://www.mkdocs.org/) + [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
