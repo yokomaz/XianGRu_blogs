@@ -12,7 +12,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone git@github.com:xiangruchen/XianGRu_blogs.git
+git clone git@github.com:yokomaz/XianGRu_blogs.git
 cd XianGRu_blogs
 
 # 2. 安装依赖（需要先装 uv）

@@ -1,7 +1,7 @@
 site_name: XianGRu's Blog
 site_description: 记录生活、读书与技术学习
 site_author: XianGRu
-site_url: https://xiangruchen.github.io/XianGRu_blogs/
+site_url: https://yokomaz.github.io/XianGRu_blogs/
 copyright: Copyright &copy; 2026 XianGRu Chen
 
 theme:
@@ -90,7 +90,7 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/xiangruchen
+      link: https://github.com/yokomaz
       name: GitHub
   # 博客侧边栏链接
   generator: false
