@@ -1,0 +1,9 @@
+[project]
+name = "xiangru-blogs"
+version = "0.1.0"
+description = "XianGRu's personal blog — life, books, and tech learning"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.6",
+]

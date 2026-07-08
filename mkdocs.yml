@@ -1,0 +1,96 @@
+site_name: XianGRu's Blog
+site_description: 记录生活、读书与技术学习
+site_author: XianGRu
+site_url: https://xiangruchen.github.io/XianGRu_blogs/
+copyright: Copyright &copy; 2026 XianGRu Chen
+
+theme:
+  name: material
+  language: zh
+  palette:
+    # 日间模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 切换夜间模式
+    # 夜间模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换日间模式
+
+  features:
+    - navigation.tabs            # 顶部导航栏
+    - navigation.tabs.sticky     # 导航栏固定
+    - navigation.top             # 返回顶部按钮
+    - navigation.indexes         # 章节索引页
+    - search.suggest             # 搜索建议
+    - search.highlight           # 搜索高亮
+    - search.share               # 搜索分享
+    - content.code.copy          # 代码块复制
+    - content.code.annotate      # 代码注释
+
+  icon:
+    logo: material/notebook-edit-outline
+
+# 博客插件配置
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_url_format: "{slug}"
+      archive: true
+      archive_name: 归档
+      categories: true
+      categories_name: 分类
+      pagination_per_page: 10
+      authors: false
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - footnotes
+  - toc:
+      permalink: true
+
+# 导航栏
+nav:
+  - 首页: index.md
+  - 博客: blog/index.md
+  - 标签: tags.md
+  - 关于: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/xiangruchen
+      name: GitHub
+  # 博客侧边栏链接
+  generator: false
