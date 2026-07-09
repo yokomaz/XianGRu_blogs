@@ -45,6 +45,7 @@ plugins:
       lang:
         - en
         - zh
+  - tags
   - blog:
       blog_dir: blog
       blog_toc: true
@@ -84,7 +85,7 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 博客: blog/index.md
-  - 标签: tags.md
+  - 标签: blog/tags.md
   - 关于: about.md
 
 extra:

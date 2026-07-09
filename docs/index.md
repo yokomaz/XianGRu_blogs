@@ -36,20 +36,17 @@ hide:
 
 ---
 
-## 🔧 我在学什么
+## 🔧 我的领域
 
 <div class="grid" markdown>
 
-:simple-python: **Python** — 日常主力语言
+:material-brain: **Artificial Intelligence** -- 人工智能
 { .card }
 
-:simple-rust: **Rust** — 正在入门
+:material-robot: **Embodied AI** -- 具身智能
 { .card }
 
-:simple-javascript: **JavaScript / TypeScript** — 前端探索
-{ .card }
-
-:simple-docker: **Docker** — 容器化部署
+:material-chip: **Orange Pi** -- 硬件开发
 { .card }
 
 </div>
