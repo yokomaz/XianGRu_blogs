@@ -87,7 +87,11 @@ model模块主要用于构建整体项目中的模型结构。
 
 ### Tokenizer
 
-用于将文字映射到数字的工具箱。这里作者使用了自己训练的6400个词表的tokenzier，对应于64M模型的能力。
+用于将文字映射到token id，并在推理之后，将token id对应回文字的词典。从0开始的情况下，tokenzier是需要根据训练语料进行训练，包括词表的构造和切分规则。
+
+同时词表的大小直接应想到了embedding层的维度，因为Embedding层需要对应词表大小，不一致的对应关系将导致训练的不稳定以及输出的幻觉。
+
+作为对64M模型的词表，作者使用了6400长度的词表。
 
 
 ## 数据模块
@@ -98,5 +102,23 @@ dataset/
 ├── SFTDataset  监督微调数据集
 ├── DPODataset   偏好数据
 └── RLAIFDataset(Reinforcement learning, AI Feedback)  强化学习的prompt组织
+```
 
 lm_dataset.py, 根据训练的不同阶段，将数据集整理成input与labels的格式。
+
+LLM的训练步骤通常分为三阶段：预训练阶段；监督微调阶段；强化学习阶段。
+
+Pretrian数据集的格式为text -> next token prediction。目的是让模型通过文本语料，学习到不同句子中token之间的统计学关联。
+
+SFT数据集的格式为conversations格式，包含assistant，user，system，包含tools call训练。
+
+RL数据集的格式为good answer和bad answer组合，迫使模型选择good answer。
+
+## 训练策略
+``` Pretrain.py ```
+
+``` DPO.py ```
+
+``` SFT.py ```
+
+``` GRPO.py ```
