@@ -1,7 +1,7 @@
 ---
 date: 2026-07-13
 categories:
-  - book
+  - books
 tags:
   - 学习
   - 笔记
