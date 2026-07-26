@@ -3,8 +3,7 @@ date: 2026-07-13
 categories:
   - tech
 tags:
-  - 学习
-  - 笔记
+  - 工程学习笔记
 draft: false
 ---
 
@@ -14,7 +13,7 @@ draft: false
 
 在淘宝看了一圈开发板之后，我选择了OrangePi zero 3 4GB 版本作为主体开发板，包含了麦克风输入模块INMP441与功放模块MAX98357。整个项目的设计为：
 
-V1 版本： ``` 语音 -> INMP441 -> Voice2Text -> MiniMind -> Text2Voice -> 语音 ``` 
+V1 版本： `语音 -> INMP441 -> Voice2Text -> MiniMind -> Text2Voice -> 语音` 
 
 一个很简单的语音输入->转换->处理->转换->回答的闭环。模型选择，转换模块选择我稍后会添加。
 
