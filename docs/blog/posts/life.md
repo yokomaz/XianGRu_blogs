@@ -1,7 +1,7 @@
 ---
 date: 2026-07-13
 categories:
-  - tech
+  - life
 tags:
   - 生活
 draft: false
