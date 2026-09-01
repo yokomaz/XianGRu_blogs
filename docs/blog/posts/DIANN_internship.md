@@ -28,7 +28,7 @@ draft: true
 
 买的4k 27寸大屏幕今天早上到位了，有一说一4k的分辨率的屏幕还从来没有用过，用在nvidia-spark上，各类软件的图标还是蛮小的，还是调整到了1080p的分辨率，看上去图标也比较大，字体比较容易看，对眼睛的压力小。
 
-Nvidia-Spark确实是强大的AI服务器，现存128G，内存4TB，并且体积就跟一盒饼干的体积差不多大，价格在淘宝上看要34000多RMB，确实让人能感觉到科技的力量，能把这么强悍的计算性能和存储性能放在这么小的一个盒子里。搞完屏幕，键盘，鼠标之后，配置了miniconda，相比于anaconda，miniconda更加简洁，只包含了python和一些必要的软件包，没有全套anaconda3那么臃肿。然后配置了codex和claude code，记忆里是不能直接安装npm的，先安装了nvm，然后通过nvm管理的npm和node.js安装了codex和claude。claude安装完后要去~/.claude.json里添加一行 **"hasCompletedOnboarding": true“** 从而绕过区域限制。看上去claude的判断区域就是看ip在某个列表里，然后通过这个参数来控制是否使用这个列表对比。
+Nvidia-Spark确实是强大的AI服务器，现存128G，内存4TB，并且体积就跟一盒饼干的体积差不多大，价格在淘宝上看要34000多RMB，确实让人能感觉到科技的力量，能把这么强悍的计算性能和存储性能放在这么小的一个盒子里。搞完屏幕，键盘，鼠标之后，配置了miniconda，相比于anaconda，miniconda更加简洁，只包含了python和一些必要的软件包，没有全套anaconda3那么臃肿。然后配置了codex和claude code，记忆里是不能直接安装npm的，先安装了nvm，然后通过nvm管理的npm和node.js安装了codex和claude。claude安装完后要去~/.claude.json里添加一行 `"hasCompletedOnboarding": true` 从而绕过区域限制。看上去claude的判断区域就是看ip在某个列表里，然后通过这个参数来控制是否使用这个列表对比。
 
 然后去找新认识的博士生欣彦，雷宜达，叶宇翔问了一下关于电机的事情，看上去是要一个USB-CAN线来提供控制，UART线来调试，一个48V的能够提供稳定直流电的电源来供电，已经整理成可能需要购买的物料了，明天再整理一下需要什么内容，到时候跟叶老师去申请购买和报销。
 
